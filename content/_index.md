@@ -10,7 +10,8 @@ type: docs
 
 **This track is a continuation of the [TREC 2024 Lateral Reading Track](https://trec-lateral-reading.github.io/), please stay tuned for more information.**
 
-![image](/dragun.png)
+<img src="/dragun.png" alt="drawing" width="50%"/>
+
 
 ## Organizers
 
