@@ -1,5 +1,5 @@
 googleAnalytics = "G-ESHL7DTVEN"
-baseURL = 'https://trec-lateral-reading.github.io/'
+baseURL = 'https://trec-dragun.github.io/'
 
 languageCode = 'en-us'
 
@@ -48,7 +48,7 @@ enableGitInfo = true
 
 [[menu.after]]
   name = "GitHub"
-  url = "https://github.com/trec-lateral-reading"
+  url = "https://github.com/trec-dragun"
   weight = 10
 
 [[menu.after]]
