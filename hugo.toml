@@ -43,7 +43,7 @@ enableGitInfo = true
 
 [[menu.after]]
   name = "Twitter"
-  url = "https://twitter.com/TREC_LR"
+  url = "https://twitter.com/TREC_DRAGUN"
   weight = 10
 
 [[menu.after]]
@@ -53,7 +53,7 @@ enableGitInfo = true
 
 [[menu.after]]
   name = "Slack"
-  url = "https://trectalk.slack.com/archives/C065QFMRNBY"
+  url = "https://trectalk.slack.com/archives/C0822MQ7VS6"
   weight = 10
 
 #[[menu.after]]
