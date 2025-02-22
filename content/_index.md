@@ -6,7 +6,7 @@ type: docs
 
 # TREC 2025 DRAGUN Track Guidelines
 
-***D**etection, **R**etrieval-**A**ugmented **G**eneration for **U**nderstanding **N**ews*
+***D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews*
 
 **This track is a continuation of the [TREC 2024 Lateral Reading Track](https://trec-lateral-reading.github.io/), please stay tuned for more information.**
 
