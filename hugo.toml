@@ -39,7 +39,7 @@ enableGitInfo = true
 #  weight = 3
 
 [menu]
-# [[menu.before]]
+[[menu.before]]
 
 [[menu.after]]
   name = "Twitter"
