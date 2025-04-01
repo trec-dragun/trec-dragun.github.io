@@ -10,7 +10,7 @@ type: docs
 
 **Below are draft guidelines. Please join our [Slack channel](https://nistgov.slack.com/archives/C08ED5JBXHT) for updates and discussions.**
 
-<!-- <img src="/dragun.png" alt="drawing" width="50%"/> -->
+ <img src="/dragun.png" alt="drawing" width="50%"/> 
 
 ## Overview
 
