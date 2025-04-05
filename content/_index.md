@@ -14,7 +14,7 @@ type: docs
 
 ## Overview
 
-Welcome to the TREC 2025 DRAGUN Track, a continuation of the previous [TREC 2024 Lateral Reading Track](./docs/TREC_2024_LR/). The goal of this track is to **support people's trustworthiness assessment of online news**. There are two tasks: (1) **Question Generation** and (2) **Report Generation**. The Question Generation task focuses on <ins>detecting critical questions readers should consider</ins> during their trustworthiness assessment. Those questions should guide readers' investigation, such as the bias or motivations of the source and narratives from other sources. This is similar to LLMs generating search queries in the “Deep Research” mode. Meanwhile, the Report Generation task involves <ins>creating a well-attributed and comprehensive report</ins> that provides readers with the background and context they need for a more informed trustworthiness evaluation. Both tasks run in parallel, with the same submission due date. This track differs from traditional fact-checking by aiming to assist readers in making their trustworthiness assessments from a neutral perspective, helping them to form their own judgments rather than dictating conclusions.
+Welcome to the TREC 2025 DRAGUN Track, a continuation of the previous [TREC 2024 Lateral Reading Track](./docs/TREC_2024_LR/). The goal of this track is to **support people's trustworthiness assessment of online news**, helping to restore trust in credible journalism while making readers more resilient to misinformation. There are two tasks: (1) **Question Generation** and (2) **Report Generation**. The Question Generation task focuses on <ins>detecting critical questions readers should consider</ins> during their trustworthiness assessment. Those questions should guide readers' investigation, such as the bias or motivations of the source and narratives from other sources. This is similar to LLMs generating search queries in the “Deep Research” mode. Meanwhile, the Report Generation task involves <ins>creating a well-attributed and comprehensive report</ins> that provides readers with the background and context they need for a more informed trustworthiness evaluation. The generated report is expected to address the most important questions from Task 1. Both tasks run in parallel, with the same submission due date. This track differs from traditional fact-checking by aiming to assist readers in making their trustworthiness assessments from a neutral perspective, helping them to form their own judgments rather than dictating conclusions.
 
 ## Participation and Communication
 
@@ -24,17 +24,18 @@ Please follow the TREC 2025 registration guidelines from their [Call for Partici
 
 - Web Collection: This track will use [MS MARCO V2.1](https://trec-rag.github.io/annoucements/2024-corpus-finalization/) (Segmented) as the document collection, the same one used by the [RAG track](https://trec-rag.github.io/), which contains about 114 million segments from around 11 million web documents. This collection can be downloaded from [here](https://trec-rag.github.io/annoucements/2024-corpus-finalization/#where-can-i-find-the-corpus).
 
-- News Articles: We will release some selected target news articles (or "topics"), published from various sources.
+- News Articles: We will release some selected target news articles (or "topics"), published from various media sources.
 
 ## Tasks
 
-Assume there is a (general public) reader who is looking through online news. This track has the following two parallel tasks with the same submission due date. Participants can choose to engage in either one or both tasks.
+Assume there is a (general public) reader who is looking through online news. This track has the following two parallel tasks with the same submission due date. Participants can choose to engage in either one or both tasks. Unlike traditional fact-checking tasks, DRAGUN emphasizes **reader empowerment** over **verdict delivery**, with the goal to support nuanced and independent judgment.
 
 ### Task 1: Question Generation
 
-For each of the topics (i.e., target news articles), participants need to produce some important questions that the reader should ask to evaluate its trustworthiness, ranked from the most important to the least important. Those questions should meet the following requirements.
+For each of the topics (i.e., target news articles), participants need to identify critical, investigative questions that a thoughtful reader should ask when evaluating a news article, such as questions that uncover source bias, motivation, or alternative narratives. The generated questions should be ranked from the most important to the least important. Think of this as simulating a "Deep Research" mode, where LLMs (or search agents) proactively generate search queries to guide the investigation of the articles's trustworthiness.
 
-- Should be at most 120 characters long.
+Those questions should meet the following requirements.
+
 - Compound questions should be avoided, e.g. who is X and when did Y happen? In general, each question should focus on a single topic.
 - Should be reasonably expected to work as a self-contained search query without reference to the article.
 
@@ -52,7 +53,7 @@ Submissions can be either **manual** (involving human intervention to generate q
 
 ## Task 2: Report Generation
 
-This is the core task of this track: generate a well-attributed report to provide more background and context (e.g., the bias and motivation of the source, narratives from other sources, etc.) to help readers better judge the trustworthiness of given news articles. It is a RAG-style task, with a fixed query: tell me what I should know about this article to better assess its trustworthiness, but a varying context: the news article. Each sentence should have at most three references. The total length of the generated reports should be within 250 words.
+This is the core task of this track: generate a well-attributed reports to provide more background and context (e.g., the bias and motivation of the source, narratives from other sources, etc.) to help readers form their own trustworthiness assessments. These reports are expected to thoughtfully address the key questions from Task 1. It is a RAG-style task, with a fixed query: tell me what I should know about this article to better assess its trustworthiness, but a varying context: the news article. Each sentence should have at most three references. The total length of the generated reports should be within 250 words.
 
 As organizers, we will provide a starter kit for participants not interested in the retrieval part in the pipeline of report generation.
 
