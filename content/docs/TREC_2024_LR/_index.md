@@ -6,7 +6,7 @@ title: "TREC 2024 Lateral Reading Track"
 
 # TREC 2024 Lateral Reading Track Guidelines
 
-**This 2024 track has concluded, and its successor, the [TREC 2025 DRAGUN Track](https://trec-dragun.github.io/), will continue in 2025. DRAGUN stands for "Detection, Retrieval, and Augmented Generation for Understanding News".**
+**Important Announcement: The [Overview Paper](https://trec.nist.gov/pubs/trec33/papers/Overview_lateral.pdf) for the 2024 track has been released. This track has now concluded, and its successor—the [TREC 2025 DRAGUN Track](https://trec-dragun.github.io/)—will continue in 2025. DRAGUN stands for** <em>**D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews</em>**.**
 
 ## Overview
 
