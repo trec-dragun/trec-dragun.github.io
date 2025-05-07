@@ -1,0 +1,26 @@
+<nav>
+{{ partial "docs/brand" . }}
+{{ partial "docs/search" . }}
+{{ if hugo.IsMultilingual }}
+  {{ partial "docs/languages" . }}
+{{ end }}
+
+{{ partial "docs/inject/menu-before" . }}
+{{ partial "docs/menu-hugo" .Site.Menus.before }}
+
+{{ partial "docs/menu-filetree" . }}
+
+{{ partial "docs/menu-hugo" .Site.Menus.after }}
+{{ partial "docs/inject/menu-after" . }}
+
+<div class="sidebar-dragun">
+  <img src="/dragun.png" alt="DRAGUN Figure" style="max-width:100%; margin-bottom: 1em;">
+</div>
+
+</nav>
+
+<!-- Restore menu position as soon as possible to avoid flickering -->
+{{ $script := resources.Get "menu-reset.js" | resources.Minify }}
+{{ with $script.Content }}
+  <script>{{ . | safeJS }}</script>
+{{ end }}
