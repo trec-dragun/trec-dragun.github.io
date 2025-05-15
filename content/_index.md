@@ -8,7 +8,7 @@ type: docs
 
 ***D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews*
 
-**Below are draft guidelines. Please join our [Slack channel](https://nistgov.slack.com/archives/C08ED5JBXHT) for updates and discussions.**
+<!--**Below are draft guidelines. Please join our [Slack channel](https://nistgov.slack.com/archives/C08ED5JBXHT) for updates and discussions.**-->
 
 <!-- <img src="/dragun.png" alt="drawing" width="50%"/> -->
 
@@ -20,7 +20,7 @@ Welcome to the TREC 2025 DRAGUN Track, the successor to the [TREC 2024 Lateral R
 
 **Report Generation** involves <ins>creating a well-attributed and comprehensive report</ins> that provides readers with background and context for a more informed trustworthiness evaluation. This report is expected to address the most important questions from Task 1. 
 
-Both tasks run in parallel, sharing the same submission deadline. Unlike traditional fact-checking, this track is designed to help readers form their own judgments from a neutral perspective, rather than dictating conclusions.
+Both tasks run in parallel, sharing the same submission deadline. Unlike traditional fact-checking, this track is designed to help readers form their own judgments by offering multi-source context from a neutral perspective, rather than establishing an "absolute truth" and delivering a verdict.
 
 ## Participation and Communication
 
@@ -34,17 +34,19 @@ Please follow the TREC 2025 registration guidelines from their <a href="https://
 
 ## Tasks
 
-Assume there is a (general public) reader who is viewing each of these 30 news articles. This track has the following two parallel tasks with the same submission due date. Participants may choose to engage in either one or both tasks. Unlike traditional fact-checking tasks, which often aim to establish an "absolute truth" and deliver a verdict, DRAGUN emphasizes offering readers multi-source context to help them form their own informed judgments. If any article includes reader comments at the bottom of the page (which should be few, if any), please disregard these comments for both tasks, i.e., reader comments following the articles are out of scope. As organizers, we will provide a <a href="https://github.com/trec-dragun/2025-starter-kit" target="_blank">starter kit</a> (currently under development) for participants to modify or build upon. Participants are also welcome to develop their own systems from scratch.
+Assume there is a (general public) reader who is viewing each of these 30 news articles. This track has the following two parallel tasks with the same submission due date. Participants may choose to engage in either one or both tasks. As organizers, we have provided a <a href="https://github.com/trec-dragun/2025-starter-kit" target="_blank">starter kit</a> for participants to modify or build upon. Participants are also welcome to develop their own systems from scratch.
+<!--Unlike traditional fact-checking tasks, which often aim to establish an "absolute truth" and deliver a verdict, DRAGUN emphasizes offering readers multi-source context to help them form their own informed judgments. -->
+Note: If any article includes reader comments at the bottom of the page (which should be few, if any), disregard these comments for both tasks, i.e., reader comments following the articles are out of scope. 
 
 ### Task 1: Question Generation
 
-For each topic (i.e., target news article), participants need to identify **10** critical and investigative questions that a thoughtful reader should look into when assessing its trustworthiness, on aspects such as source bias, motivation, or alternative viewpoints from other sources. The generated questions should be <ins>ranked from most to least important</ins>, similar to the "Deep Research" mode, where LLMs (search agents) proactively generate queries to guide the investigation of an article's trustworthiness. Participants may <ins>use any resources</ins> (online or offline) beyond the specified web collection to develop their systems for this task.
+For each topic (i.e., target news article), participants need to generate **10** critical and investigative questions that a thoughtful reader should look into when assessing its trustworthiness, on aspects such as source bias, motivation, or breadth of viewpoints, including centrist and right wing viewpoints. The generated questions should be <ins>ranked from most to least important</ins>, similar to the "Deep Research" mode, where LLMs (search agents) proactively generate queries to guide the investigation of an article's trustworthiness. Participants may <ins>use any resources</ins> (online or offline) beyond the specified web collection to develop their systems for this task.
 
 Questions should meet the following requirements:
 
 - They should be at most 300 characters long.
 - Avoid compound questions (e.g., *Who is X and when did Y happen?* ). Each question should focus on a single topic.
-- Avoid overly general or ambiguous questions, in the context of the article (e.g., *Is there concrete evidence provided to support the information in the article?* or *Are there other sources corroborating the details presented in this article?* ).
+- Avoid overly general or ambiguous questions, in the context of the article (e.g., *Are there other sources corroborating the details presented in this article?* ).
 
 All questions for the articles should be compiled into a single file, formatted as follows, and submitted to NIST via <a href="https://ir.nist.gov/evalbase/" target="_blank">Evalbase</a>:
 
@@ -60,7 +62,7 @@ Submissions can be either **manual** (involving human intervention to generate q
 
 ### Task 2: Report Generation
 
-This is the core task of this track: for each topic (i.e., target news article), generate a well-attributed report to provide more background and context, such as the bias and motivation of the source, details on cited evidence, and viewpoints from other sources, to help readers form their own trustworthiness assessments. These reports are expected to thoughtfully address the most important questions from Task 1. It can be viewed as a RAG-style task, with a fixed query: *tell me what I should know about this article to better assess its trustworthiness*, but a varying context: *the news article*.
+This is the **core task** of this track: for each topic (i.e., target news article), generate a well-attributed report to provide more background and context, such as the bias and motivation of the source, details on the cited support in the article, and viewpoints from other sources, to help readers form their own trustworthiness assessments. These reports are expected to thoughtfully address the most important questions from Task 1. It can be viewed as a RAG-style task, with a fixed query: *tell me what I should know about this article to better assess its trustworthiness*, but a varying context: *the news article*.
 
 Each sentence should have **at most three references** (i.e., segment's `docid` from `MS MARCO V2.1 (Segmented)`). The total length of the generated reports should be **within 250 words**. Note that it is possible that no answer exists in `MS MARCO V2.1 (Segmented)` for some generated questions from Task 1. In such cases, it is suggested to skip those questions in the generated reports, as answers without citations (not grounded on the web collection) are not desired for RAG systems.
 

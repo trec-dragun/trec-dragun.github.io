@@ -53,7 +53,7 @@ enableGitInfo = true
 
 [[menu.after]]
   name = "Slack"
-  url = "https://trectalk.slack.com/archives/C0822MQ7VS6"
+  url = "https://nistgov.slack.com/archives/C08ED5JBXHT"
   weight = 10
 
 #[[menu.after]]
@@ -90,7 +90,7 @@ enableGitInfo = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = 'https://github.com/trec-lateral-reading/trec-lateral-reading.github.io'
+  BookRepo = 'https://github.com/trec-dragun/trec-dragun.github.io'
 
   # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
   # commit hash for 'doc' page type.
