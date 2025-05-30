@@ -170,4 +170,4 @@ There are other tracks in TREC 2025 that feature RAG tasks, with a similar submi
 - <a href="https://trec-rag.github.io/" target="_blank">TREC 2025 Retrieval-Augmented Generation Track</a>
 - <a href="https://trec-ragtime.github.io/" target="_blank">TREC 2025 RAGTIME Track</a>
 - <a href="https://www.trecikat.com/" target="_blank">TREC 2025 Interactive Knowledge Assistance Track (iKAT)</a>
-- <a href="https://dmice.ohsu.edu/trec-biogen/" target="_blank">TREC 2025 Biomedical Generative Retrieval Track (BioGen)</a>
+- <a href="https://trec-biogen.github.io/docs/" target="_blank">TREC 2025 Biomedical Generative Retrieval Track (BioGen)</a>
