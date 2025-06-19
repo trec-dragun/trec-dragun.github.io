@@ -118,7 +118,9 @@ Participants should follow the standard TREC run format below and submit their r
 
 NIST assessors judged the helpfulness of generated questions from Task 1 and the usefulness of retrieved documents to answer the corresponding question in the context of the news article from Task 2.
 Here are the assessing instructions: [instructions.pdf](/assessing_instructions.pdf).
-Please refer to our track overview paper for detailed result analysis.
+Evaluation results (including assessor questions, question assessment, and document assessment) can be found on this [page](https://pages.nist.gov/trec-browser/trec33/lateral/data/).
+Please refer to our track [overview paper]((https://trec.nist.gov/pubs/trec33/papers/Overview_lateral.pdf)) for detailed result analysis.
+
 <!--Evaluation details are to be determined.-->
 <!--As part of the Task 1 evaluation, we will consider the overlap between the questions created by the assessors and the questions created by the participants, but the primary measure will be based on the usefulness of the questions, independent of the assessor created questions.-->
 

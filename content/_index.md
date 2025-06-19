@@ -1,4 +1,4 @@
-  ---
+---
 weight: 1
 title: 2025
 type: docs
