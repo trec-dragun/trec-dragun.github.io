@@ -6,7 +6,7 @@ title: "TREC 2024 Lateral Reading Track"
 
 # TREC 2024 Lateral Reading Track Guidelines
 
-**Important Announcement: The [Overview Paper](https://trec.nist.gov/pubs/trec33/papers/Overview_lateral.pdf) for the 2024 track has been released. This track has now concluded, and its successor—the [TREC 2025 DRAGUN Track](https://trec-dragun.github.io/)—will continue in 2025. DRAGUN stands for** <em>**D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews</em>**.**
+**Important Announcement: The [Overview Paper](/Overview_of_the_TREC_2024_Lateral_Reading_Track.pdf) for the 2024 track has been released. This track has now concluded, and its successor—the [TREC 2025 DRAGUN Track](https://trec-dragun.github.io/)—will continue in 2025. DRAGUN stands for** <em>**D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews</em>**.**
 
 ## Overview
 
@@ -119,7 +119,7 @@ Participants should follow the standard TREC run format below and submit their r
 NIST assessors judged the helpfulness of generated questions from Task 1 and the usefulness of retrieved documents to answer the corresponding question in the context of the news article from Task 2.
 Here are the assessing instructions: [instructions.pdf](/assessing_instructions.pdf).
 Evaluation results (including assessor questions, question assessment, and document assessment) can be found on this [page](https://pages.nist.gov/trec-browser/trec33/lateral/data/).
-Please refer to our track [overview paper]((https://trec.nist.gov/pubs/trec33/papers/Overview_lateral.pdf)) for detailed result analysis.
+Please refer to our track [overview paper](/Overview_of_the_TREC_2024_Lateral_Reading_Track.pdf) for detailed result analysis.
 
 <!--Evaluation details are to be determined.-->
 <!--As part of the Task 1 evaluation, we will consider the overlap between the questions created by the assessors and the questions created by the participants, but the primary measure will be based on the usefulness of the questions, independent of the assessor created questions.-->
