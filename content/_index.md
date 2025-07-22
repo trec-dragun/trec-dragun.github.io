@@ -8,6 +8,8 @@ type: docs
 
 ***D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews*
 
+<u>**Important announcement: The submission deadline has been extended by one week to August 22nd.**</u>
+
 <!--**Below are draft guidelines. Please join our [Slack channel](https://nistgov.slack.com/archives/C08ED5JBXHT) for updates and discussions.**-->
 
 <!-- <img src="/dragun.png" alt="drawing" width="50%"/> -->
@@ -107,7 +109,7 @@ Above is an example line from the final JSONL run file, with the following field
 ## Schedule
 
 - **News Articles (Topics) Released**:  May 7
-- -> **Task 1 and Task 2 <u>Submission Due</u>**: August 15
+- -> **Task 1 and Task 2 <u>Submission Due</u>**: August 22 (extended)
 - **Evaluation Results Release**: Late September
 - **Notebook <u>Paper Due</u>**: Late October
 - **TREC 2025 Conference**: November 17-21 at NIST in Gaithersburg, MD, USA
