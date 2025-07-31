@@ -109,7 +109,7 @@ Above is an example line from the final JSONL run file, with the following field
 ## Schedule
 
 - **News Articles (Topics) Released**:  May 7
-- -> **Task 1 and Task 2 <u>Submission Due</u>**: August 22 (extended)
+- -> **Task 1 and Task 2 <u>Submission Due</u>**: ~August 15~ August 22 <br>* Use this <a href="/trec_dragun_validate.py" download>script</a> to validate your runs before submitting them.<br>Example use: `python trec_dragun_validate.py dragun-organizers-task-1 task1`
 - **Evaluation Results Release**: Late September
 - **Notebook <u>Paper Due</u>**: Late October
 - **TREC 2025 Conference**: November 17-21 at NIST in Gaithersburg, MD, USA
