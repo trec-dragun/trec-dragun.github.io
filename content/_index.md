@@ -116,7 +116,7 @@ Above is an example line from the final JSONL run file, with the following field
 
 ## Evaluation
 
-NIST assessors will evaluate the trustworthiness of each of the 30 news articles, generate questions (similar to those in Task 1), and identify candidate answers through online searches. These will serve as rubrics for evaluating submissions to both tasks. For Task 1, participant questions will be automatically graded based on their alignment with the assessors’ questions. For Task 2, participant reports will be manually evaluated by NIST assessors, focusing on how many assessor questions each report answers. If no answer can be found in `MS MARCO V2.1 (Segmented)` for an assessor question, that question will be dropped from the rubrics during report evaluation. Further details are to be determined.
+NIST assessors will evaluate the trustworthiness of each of the 30 news articles, generate questions (similar to those in Task 1), and identify candidate answers through online searches. These will serve as rubrics for evaluating submissions to both tasks. Here are the assessing instructions: <a href="/TREC 2025 DRAGUN Track Assessing Instructions.pdf" target="_blank">TREC 2025 DRAGUN Track Assessing Instructions.pdf</a>. For Task 1, participant questions will be automatically graded based on their alignment with the assessors’ questions. For Task 2, participant reports will be manually evaluated by NIST assessors, focusing on how many assessor questions each report answers. If no answer can be found in `MS MARCO V2.1 (Segmented)` for an assessor question, that question will be dropped from the rubrics during report evaluation. Further details are to be determined.
 
 ## Q&A
 
