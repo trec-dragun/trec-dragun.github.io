@@ -8,12 +8,6 @@ type: docs
 
 ***D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews*
 
-<u>**Important announcement: The submission deadline has been extended by one week to August 22nd.**</u>
-
-<!--**Below are draft guidelines. Please join our [Slack channel](https://nistgov.slack.com/archives/C08ED5JBXHT) for updates and discussions.**-->
-
-<!-- <img src="/dragun.png" alt="drawing" width="50%"/> -->
-
 ## Overview
 
 Welcome to the TREC 2025 DRAGUN Track, the successor to the [TREC 2024 Lateral Reading Track](./docs/TREC_2024_LR/). This track aims to **support readers in assessing the trustworthiness of online news**. There are two tasks: (1) **Question Generation** and (2) **Report Generation**. 
@@ -109,14 +103,14 @@ Above is an example line from the final JSONL run file, with the following field
 ## Schedule
 
 - **News Articles (Topics) Released**:  May 7
-- -> **Task 1 and Task 2 <u>Submission Due</u>**: ~August 15~ August 22 <br>* Use this <a href="/trec_dragun_validate.py" download>script</a> to validate your runs before submitting them.<br>Example use: `python trec_dragun_validate.py dragun-organizers-task-1 task1`
-- **Evaluation Results Release**: Late September
-- **Notebook <u>Paper Due</u>**: Late October
-- **TREC 2025 Conference**: November 17-21 at NIST in Gaithersburg, MD, USA
+- **Task 1 and Task 2 <u>Submission Due</u>**: ~August 15~ August 22 <br>* Use this <a href="/trec_dragun_validate.py" download>script</a> to validate your runs before submitting them.<br>Example use: `python trec_dragun_validate.py dragun-organizers-task-1 task1`
+- **Evaluation Results Released**: October 15
+- **Notebook <u>Paper Due</u>**: December 1
+- **TREC 2025 Conference**: December 11 (Online hosted by NIST)
 
 ## Evaluation
 
-NIST assessors will evaluate the trustworthiness of each of the 30 news articles, generate questions (similar to those in Task 1), and identify candidate answers through online searches. These will serve as rubrics for evaluating submissions to both tasks. Here are the assessing instructions: <a href="/TREC 2025 DRAGUN Track Assessing Instructions.pdf" target="_blank">TREC 2025 DRAGUN Track Assessing Instructions.pdf</a>. For Task 1, participant questions will be automatically graded based on their alignment with the assessors’ questions. For Task 2, participant reports will be manually evaluated by NIST assessors, focusing on how many assessor questions each report answers. If no answer can be found in `MS MARCO V2.1 (Segmented)` for an assessor question, that question will be dropped from the rubrics during report evaluation. Further details are to be determined.
+NIST assessors will evaluate the trustworthiness of each of the 30 news articles, generate questions (similar to those in Task 1), and identify candidate answers through online searches. These will serve as rubrics for evaluating submissions to both tasks. Here are the assessment guidelines: <a href="/2025_assessment_guidelines.html" target="_blank">TREC_2025_DRAGUN_Track_Assessment_Guidelines.pdf</a>. For Task 1, participant questions will be graded based on their alignment with the assessors’ questions. For Task 2, participant reports will be manually evaluated by NIST assessors, focusing on how many assessor questions each report answers.
 
 ## Q&A
 

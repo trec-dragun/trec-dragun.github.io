@@ -6,7 +6,7 @@ title: "TREC 2024 Lateral Reading Track"
 
 # TREC 2024 Lateral Reading Track Guidelines
 
-**Important Announcement: The [Overview Paper](/Overview_of_the_TREC_2024_Lateral_Reading_Track.pdf) for the 2024 track has been released. This track has now concluded, and its successor—the [TREC 2025 DRAGUN Track](https://trec-dragun.github.io/)—will continue in 2025. DRAGUN stands for** <em>**D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews</em>**.**
+**Important Announcement: The <a href="https://trec.nist.gov/pubs/trec33/papers/Overview_lateral.pdf" target="_blank">Overview Paper</a> for the 2024 track has been released. This track has now concluded, and its successor—the [TREC 2025 DRAGUN Track](https://trec-dragun.github.io/)—will continue in 2025. DRAGUN stands for** <em>**D**etection, **R**etrieval, and **A**ugmented **G**eneration for **U**nderstanding **N**ews</em>**.**
 
 ## Overview
 
@@ -15,11 +15,11 @@ This track is for researchers interested in supporting readers in assessing the 
 The current web landscape requires the ability to make judgments about the trustworthiness of information, which is a difficult task for most people.
 <!--Meanwhile, automated approaches for fact-checking are likely to remain limited to well-defined domains or to relatively simple forms of claim verification.-->
 
-[Wineburg and McGrew (2019)](https://journals.sagepub.com/doi/abs/10.1177/016146811912101102) discovered that professional information analysts follow a process of **Lateral Reading** that involves asking questions about a document's source and the support for its claims, and seeking answers to these questions via search engines in order to establish the document's trustworthiness.
-In the first year of this track, our goal is to explore NLP and IR technologies to support the tested practice of lateral reading during people's trustworthiness evaluation of **online news**, given the civic importance of trustworthy news and a decline of trust in news over the years [(Brenan, 2022)](https://news.gallup.com/poll/403166/americans-trust-media-remains-near-record-low.aspx).
+<a href="https://journals.sagepub.com/doi/abs/10.1177/016146811912101102" target="_blank">Wineburg and McGrew (2019)</a> discovered that professional information analysts follow a process of **Lateral Reading** that involves asking questions about a document's source and the support for its claims, and seeking answers to these questions via search engines in order to establish the document's trustworthiness.
+In the first year of this track, our goal is to explore NLP and IR technologies to support the tested practice of lateral reading during people's trustworthiness evaluation of **online news**, given the civic importance of trustworthy news and a decline of trust in news over the years <a href="https://news.gallup.com/poll/403166/americans-trust-media-remains-near-record-low.aspx" target="_blank">(Brenan, 2022)</a>.
 As such, it will not require a definition of what is true or false, and thus the track can address trustworthiness beyond the relatively narrow focus of traditional claim verification.
 
-While teaching people how to do lateral reading can be an effective means of helping people better evaluate the trustworthiness of information [(McGrew et al., 2019)](https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/bjep.12279), this training cannot easily reach the millions of people who use the Internet and are finished with their schooling.
+While teaching people how to do lateral reading can be an effective means of helping people better evaluate the trustworthiness of information <a href="https://bpspsychub.onlinelibrary.wiley.com/doi/abs/10.1111/bjep.12279" target="_blank">(McGrew et al., 2019)</a>, this training cannot easily reach the millions of people who use the Internet and are finished with their schooling.
 As such, an opportunity exists for systems to assist users with lateral reading by helping them understand what they should question about a document and helping them find other documents that can answer those questions.
 For example, imagine a "Lateral Reading Copilot" that could assist or nudge people towards lateral reading behaviors when reading web pages.
 
@@ -33,13 +33,13 @@ After the deadline for Task 1, we will release the NIST assessors' Task 1 questi
 
 ## Data
 
-- **Web Collection**: This track will use the English subset `ClueWeb22-B-English` of the new [ClueWeb22](https://www.lemurproject.org/clueweb22.php/) Category B dataset as the document collection, which contains about 87 million popular web documents of roughly 200 GB of data (size of plaintext).
-This web collection was collected around February 2022. Please refer to their [website](https://www.lemurproject.org/clueweb22/obtain.php) for how to obtain the dataset.
+- **Web Collection**: This track will use the English subset `ClueWeb22-B-English` of the new <a href="https://www.lemurproject.org/clueweb22.php/" target="_blank">ClueWeb22</a> Category B dataset as the document collection, which contains about 87 million popular web documents of roughly 200 GB of data (size of plaintext).
+This web collection was collected around February 2022. Please refer to their <a href="https://www.lemurproject.org/clueweb22/obtain.php" target="_blank">website</a> for how to obtain the dataset.
 The `ClueWeb22-B-English` subset is found in `cw22-b/txt/en` for plaintext and `cw22-b/html/en` for WARC format, etc.
 Considering the size of `ClueWeb22-B-English`, we suggest obtain the collection as soon as possible.
-- **News Articles**: [trec-2024-lateral-reading-task1-articles.txt](/trec-2024-lateral-reading-task1-articles.txt) contains the the ClueWeb22-IDs of 50 selected target news articles (or "topics"), each about a different event, published in 2021 and 2022 from various sources.
+- **News Articles**: <a href="/trec-2024-lateral-reading-task1-articles.txt" target="_blank">trec-2024-lateral-reading-task1-articles.txt</a> contains the the ClueWeb22-IDs of 50 selected target news articles (or "topics"), each about a different event, published in 2021 and 2022 from various sources.
 If participants have not yet obtained the collection, they can obtain the 50 documents (plaintext version) from CMU for free once they have signed a licensing agreement with them.
-To obtain this 50-document subset, please refer to the [How to Get It](https://www.lemurproject.org/clueweb22/obtain.php) page and follow the instructions to request the `TREC-LR-2024-T1` subset.
+To obtain this 50-document subset, please refer to the <a href="https://www.lemurproject.org/clueweb22/obtain.php" target="_blank">How to Get It</a> page and follow the instructions to request the `TREC-LR-2024-T1` subset.
 
 ## Tasks
 
@@ -53,7 +53,7 @@ For each of the 50 topics (i.e., target news articles), participants need to pro
 - Should be reasonably expected to be answered by a single web page.
 - Compound questions should be avoided, e.g. who is X and when did Y happen? In general, each question should focus on a single topic.
 
-Participants should put all the questions for those 50 articles into a single file, using the format below, and submit it to NIST via [Evalbase](https://ir.nist.gov/evalbase/).
+Participants should put all the questions for those 50 articles into a single file, using the format below, and submit it to NIST via <a href="https://ir.nist.gov/evalbase/" target="_blank">Evalbase</a>.
 - It should be a tab-separated file.
 - It should be encoded in UTF-8.
 - Each line consists of the following tab-separated fields in this order: `topic_id`, `run_tag`, `rank`, `question`.
@@ -74,7 +74,7 @@ A file in the format of this example is what we expect participants to return, c
 
 ### Task 2: Document Retrieval
 
-We have pooled 12 questions for each topic (i.e., target news article) from those submitted by participants in Task 1: [trec-2024-lateral-reading-task2-questions.txt](/trec-2024-lateral-reading-task2-questions.txt).
+We have pooled 12 questions for each topic (i.e., target news article) from those submitted by participants in Task 1: <a href="/trec-2024-lateral-reading-task2-questions.txt" target="_blank">trec-2024-lateral-reading-task2-questions.txt</a>.
 In Task 2, for each question, participants need to retrieve **10** documents from the web collection `ClueWeb22-B-English` that are useful for answering those questions in the context of the corresponding news article, ranked by their usefulness.
 This task is similar to a traditional ad-hoc retrieval task.
 As we provide questions, to participate in Task 2 does not require your participation in Task 1.
@@ -88,12 +88,12 @@ Those questions might be discarded during the evaluation of Task 2 submissions.
 Meanwhile, participants are free to use the target news articles in addition to the pooled questions during their retrieval processes.
 
 Runs can be either **full rank** or **rerank**.
-We have prepared a BM25-RM3 baseline run ([Organizers-Baseline-BM25RM3](/Organizers-Baseline-BM25RM3)) and participants can rerank the top 100 retrieved results using BM25 (`k1=0.9, b=0.4`) with RM3 (`fb_terms=10, fb_docs=10, original_query_weight=0.5`) as implemented in [Pyserini](https://github.com/castorini/pyserini), without the hassle to index the full collection.
+We have prepared a BM25-RM3 baseline run <a href="/Organizers-Baseline-BM25RM3" target="_blank">Organizers-Baseline-BM25RM3</a> and participants can rerank the top 100 retrieved results using BM25 (`k1=0.9, b=0.4`) with RM3 (`fb_terms=10, fb_docs=10, original_query_weight=0.5`) as implemented in <a href="https://github.com/castorini/pyserini" target="_blank">Pyserini</a>, without the hassle to index the full collection.
 Participants who want to rerank the baseline run can request the plaintext version of those retrieved documents (about 1 GB in JSONL format) from CMU after signing a licensing agreement with them.
-Please refer to the [How to Get It](https://www.lemurproject.org/clueweb22/obtain.php) page and follow the instructions to request the `TREC-LR-2024-T2` subset.
+Please refer to the <a href="https://www.lemurproject.org/clueweb22/obtain.php" target="_blank">How to Get It</a> page and follow the instructions to request the `TREC-LR-2024-T2` subset.
 
 Similar to Task 1, runs may be either **automatic** or **manual**.
-Participants should follow the standard TREC run format below and submit their runs to NIST via [Evalbase](https://ir.nist.gov/evalbase/).
+Participants should follow the standard TREC run format below and submit their runs to NIST via <a href="https://ir.nist.gov/evalbase/" target="_blank">Evalbase</a>.
 - It should be a space-separated file.
 - It should be encoded in ASCII.
 - Each line consists of the following space-separated fields in this order: `question_id`, `Q0`, `doc_id`, `rank`, `score`, `run_tag`.
@@ -101,7 +101,7 @@ Participants should follow the standard TREC run format below and submit their r
     - `Q0`: Unused column, whose value should always be Q0.
     - `doc_id`: ClueWeb22-ID of the retrieved document answering the question in the context of the target news article.
     - `rank`: Rank of the document, starting from 1.
-    - `score`: Score (integer or floating point) of the document, in non-increasing order. [trec_eval](https://trec.nist.gov/trec_eval/) sorts documents by the scores instead of the ranks.
+    - `score`: Score (integer or floating point) of the document, in non-increasing order. <a href="https://trec.nist.gov/trec_eval/" target="_blank">trec_eval</a> sorts documents by the scores instead of the ranks.
     - `run_tag`: A tag that uniquely identifies your group and the method you used to produce the run. Each run should have a different tag. Run tags for runs submitted by one group **must** all share a common prefix to identify the group across runs.
 
 ## Schedule
@@ -117,9 +117,9 @@ Participants should follow the standard TREC run format below and submit their r
 ## Evaluation
 
 NIST assessors judged the helpfulness of generated questions from Task 1 and the usefulness of retrieved documents to answer the corresponding question in the context of the news article from Task 2.
-Here are the assessing instructions: [instructions.pdf](/assessing_instructions.pdf).
-Evaluation results (including assessor questions, question assessment, and document assessment) can be found on this [page](https://pages.nist.gov/trec-browser/trec33/lateral/data/).
-Please refer to our track [overview paper](/Overview_of_the_TREC_2024_Lateral_Reading_Track.pdf) for detailed result analysis.
+Here are the assessing instructions: <a href="/2024_assessment_guidelines.html" target="_blank">TREC_2024_Lateral_Reading_Track_Assessing_Instructions.pdf</a>.
+Evaluation results (including assessor questions, question assessment, and document assessment) can be found on this <a href="https://pages.nist.gov/trec-browser/trec33/lateral/data/" target="_blank">page</a>.
+Please refer to our track <a href="https://trec.nist.gov/pubs/trec33/papers/Overview_lateral.pdf" target="_blank">overview paper</a> for detailed result analysis.
 
 <!--Evaluation details are to be determined.-->
 <!--As part of the Task 1 evaluation, we will consider the overlap between the questions created by the assessors and the questions created by the participants, but the primary measure will be based on the usefulness of the questions, independent of the assessor created questions.-->
@@ -127,9 +127,9 @@ Please refer to our track [overview paper](/Overview_of_the_TREC_2024_Lateral_Re
 ## Q&A
 
 1. How do we register to participate in this track? \
-*Please follow the TREC registration guidelines from their [Call for Participation](https://trec.nist.gov/pubs/call2024.html).*
+*Please follow the TREC registration guidelines from their <a href="https://trec.nist.gov/pubs/call2024.html" target="_blank">Call for Participation</a>.*
 2. Why can't we join the Slack channel? \
-*[#lateral-reading-2024](https://trectalk.slack.com/archives/C065QFMRNBY) is in the TREC workspace. Please join the workspace first by following the instructions in the TREC 2024 welcome email after registration.*
+*<a href="https://trectalk.slack.com/archives/C065QFMRNBY" target="_blank">#lateral-reading-2024</a> is in the TREC workspace. Please join the workspace first by following the instructions in the TREC 2024 welcome email after registration.*
 3. Is there a limit on how many runs each group can submit?\
 *Participating groups will be allowed to submit as many runs as they like, but they need authorization from the track organizers before submitting more than 10 runs per task. Not all runs are likely to be used for pooling and groups will need to specify a preference ordering for pooling purposes.*
 
@@ -176,4 +176,4 @@ Please refer to our track [overview paper](/Overview_of_the_TREC_2024_Lateral_Re
 </table>
 
 ## Resources
-- <a href="https://cor.inquirygroup.org/curriculum/collections/teaching-lateral-reading">Civic Online Reasoning - Teaching Lateral Reading</a>
+- <a href="https://cor.inquirygroup.org/curriculum/collections/teaching-lateral-reading" target="_blank">Civic Online Reasoning - Teaching Lateral Reading</a>
