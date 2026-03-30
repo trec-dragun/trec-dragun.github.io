@@ -26,7 +26,7 @@ Please follow the TREC 2025 registration guidelines from their <a href="https://
 
 - **Web Collection**: This track will use <a href="https://trec-rag.github.io/annoucements/2024-corpus-finalization//#ms-marco-v21-document-corpus---segmented-version" target="_blank">MS MARCO V2.1 (Segmented)</a> as the web collection for the report generation task, the same corpus used by the <a href="https://trec-rag.github.io/" target="_blank">TREC Retrieval-Augmented Generation Track</a>. This segmented collection consists of approximately 114 million segments derived from around 11 million web documents. The collection is available for download <a href="https://trec-rag.github.io/annoucements/2024-corpus-finalization/#where-can-i-find-the-corpus" target="_blank">here</a>.
 
-- **News Articles**: <a href="/trec-2025-dragun-topics.jsonl" target="_blank">trec-2025-dragun-topics.jsonl</a> provides **30** selected target news articles (i.e., topics), each on a different subject and from a range of sources. These articles were extracted from the `MS MARCO V2.1 Document` collection. Each line in this JSONL file includes the following fields for a selected news article: `docid`, `url`, `title`, `headings`, and `body`.
+- **News Articles**: <a href="https://trec.nist.gov/data/dragun/trec-2025-dragun-topics.jsonl" target="_blank">trec-2025-dragun-topics.jsonl</a> provides **30** selected target news articles (i.e., topics), each on a different subject and from a range of sources. These articles were extracted from the `MS MARCO V2.1 Document` collection. Each line in this JSONL file includes the following fields for a selected news article: `docid`, `url`, `title`, `headings`, and `body`.
 
 ## Tasks
 
